@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Bike Website</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+        <img src="images/logo.png" class="logo-img" alt="">
+        <a href="" class="btn">Test Drive</a>
+        </div>
+
+        <div class="text--section">
+            <h2 class="com--name">THE BMW</h2>
+            <h1 class="bike--type">G 310 R</h1>
+            <p class="review-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Perferendis vero non quas vitae dolore ratione soluta veniam deserunt 
+                obcaecati consequuntur eaque.
+            </p>
+            <a href="" class="btn down--btn">Click here</a>
+        </div>
+
+        <div class="bike--colors">
+            <!-- <div  class="red--bike color-bike" onclick="redBikke()"></div>
+            <div class="black--bike color-bike" onclick="blackBikke()"></div>
+            <div class="blue--bike color-bike" onclick="blueBikke()"></div> -->
+
+            <div  class="red--bike color-bike"></div>
+            <div class="black--bike color-bike"></div>
+            <div class="blue--bike color-bike"></div>
+        </div>
+        
+    </div>
+
+    <script>
+        const redBike = document.querySelector(".red--bike");
+        const blueBike = document.querySelector(".blue--bike");
+        const blackBike = document.querySelector(".black--bike");
+        const container = document.querySelector(".container");
+
+
+
+        redBike.onclick = function(){
+            container.style.backgroundImage = "url(images/BMW1.png)";
+        }
+
+        blueBike.onclick = function(){
+            container.style.backgroundImage = "url(images/BMW2.png)";
+        }
+
+        blackBike.onclick = function(){
+            container.style.backgroundImage = "url(images/BMW3.png)";
+        }
+
+        // #########################onclick#############
+
+        // function redBikke(){
+        //     container.style.backgroundImage = "url(images/BMW1.png)";
+        // }
+
+        // function blueBikke(){
+        //     container.style.backgroundImage = "url(images/BMW2.png)";
+        // }
+
+        // function blackBikke(){
+        //     container.style.backgroundImage = "url(images/BMW3.png)";
+        // }
+       //################################################################## 
+        
+    </script>
+
+</body>
+</html>
